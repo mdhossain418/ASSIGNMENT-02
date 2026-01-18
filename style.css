@@ -13,13 +13,17 @@ header{
 }
 .logo {
   max-width: 219px;
-  margin-right: 314px;
+  margin-right: 319px;
+  margin-left: 200px;
   font-weight: bold;
   color: white;
   display: flex;
   align-items: center;
   gap: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+.logo h1{
+    display: flex;
 }
 
 .gradient-text {
@@ -46,7 +50,7 @@ nav{
     align-items: center;
     justify-content: center;
     margin-right: 314px;
-    margin-left: 314px;
+    margin-left: 320px;
 }
 nav .menu li{
     position: relative;
@@ -60,17 +64,19 @@ nav .menu  a{
     color: #FFFF;
 }
 .subscribe-btn {
+    position: relative;
+    right: 200px;
     display: inline-block;
     width: 135px;
   background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
-  padding: 2px;
+  padding: 1px;
   border: none;
   border-radius: 1000px;
   cursor: pointer;
 }
 .subscribe-btn span {
   display: flex;
-  padding: 16px;
+  padding: 14px;
   color: #ffff;
   border-radius: 1000px;
   font-size: 15px;
