@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.font-open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+header{
+    background-color: #412567;
+}
+.logo {
+  max-width: 219px;
+  margin-right: 314px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav{
+    display: flex;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+}
+.menu .item{
+    display: flex;
+    gap: 32px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    margin-right: 314px;
+    margin-left: 314px;
+}
+nav .menu li{
+    position: relative;
+    right: 255px;
+    
+}
+nav .menu  a{
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: #FFFF;
+}
+.subscribe-btn {
+    display: inline-block;
+    width: 135px;
+  background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+  padding: 2px;
+  border: none;
+  border-radius: 1000px;
+  cursor: pointer;
+}
+.subscribe-btn span {
+  display: flex;
+  padding: 16px;
+  color: #ffff;
+  border-radius: 1000px;
+  font-size: 15px;
+  font-weight: semi bold;
+  background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+  -webkit-background-clip: text;
+ 
+}
+.subscribe-btn:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
