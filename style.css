@@ -34,6 +34,7 @@ header{
 .gradient-text {
   background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu-icon{
@@ -91,6 +92,7 @@ nav .menu  a{
   font-weight: semi bold;
   background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
   -webkit-background-clip: text;
+  background-clip: text;
  
 }
 .subscribe-btn:hover {
@@ -378,6 +380,147 @@ p{
     border-radius: 40px;
     background-color: rgba(53, 17, 101, 0.5);
     color: #fff;
+}
+.future-section{
+  max-width: 1600px;
+  gap: 120px;
+  background-color: #1A0B2E;
+}
+h2{
+  position: relative;
+  top: 60px;
+  left: 140px;
+  max-width: 1200px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+.future-container{
+  display: flex;
+  max-width: 1200px;
+  gap: 40px;
+  margin: 120px 200px 120px 200px;
+  text-align: left;
+}
+.future-container .main-img{
+  width: 100%;
+}
+.future-container h3{
+  max-width: 332px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin: 24px 24px 12px 24px;
+}
+.future-container p{
+  max-width: 332px;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 60%;
+  color: #fff;
+  margin: 12px 24px 12px 24px;
+}
+.future-container .clock img{
+  width: 20px;
+  height: 20px;
+  margin: 14px 0px 26px 24px;
+}
+.future-container .clock p{
+  max-width: 53px;
+  font-size: 16px;
+  font-weight: semi bold;
+  line-height: 24px;
+  color: #00FF88;
+  margin-left: 6px;
+}
+.future-container .clock{
+  display: flex;
+}
+.about-section{
+  padding: 120px 200px 120px 200px;
+}
+.about-section h2{
+  position: relative;
+  left: 22px;
+  max-width: 1200px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 140px;
+ text-align: center;
+ align-items: center;
+ justify-content: center;
+}
+.about-container{
+  display: flex;
+  max-width: 1200px;
+  height: 280px;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+
+}
+.about-container .host{
+  position: relative;
+  right:-20px;
+  width: 200px;
+  height: 200px;
+}
+.about-container .about-content{
+  max-width: 896px;
+  gap: 16px;
+  margin: 48px 40px 48px 24px;
+  text-align: left;
+}
+ .host-name{
+  position: relative;
+  top: px;
+  right: 380px;
+  text-align: left;
+  
+  
+ 
+  
+}
+.host-name h2{
+  max-width: 896px;
+  font-size: 32px;
+   font-weight: bold;
+}
+.about-container .about-content p{
+  position: relative;
+  bottom: 70px;
+  max-width: 896px ;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 60%;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.socials {
+  position: relative;
+  bottom: 90px;
+  margin-top: 28px;
+  display: flex;
+  gap: 14px;
+}
+.icon-box {
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 14px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
 }
 
 
