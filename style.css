@@ -104,25 +104,29 @@ nav .menu  a{
 .hero-container{
   max-width: 1600px;
   min-height: 100vh;
+  height: 760px;
   display: flex;
   flex-direction: column;
   position: relative;
-  background: url("./assets/hero-bg.png") no-repeat;
+  background: url("./assets/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   align-items: center;
   justify-content: center;
+  
 
 }
 .mouth-icon {
   position: relative;
-  margin-bottom: 20px;
+  top: 22px;
+  margin-bottom: px;
 }
 .mic-wrapper {
   position: relative;
-  width: 300px;
-  bottom: 30px;
+  width: 340px;
+  bottom: px;
+  top: 1px;
 }
 .mic-bg {
   width: 100%;
@@ -133,7 +137,6 @@ nav .menu  a{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70px;
 }
 .badge {
   position: absolute;
@@ -179,6 +182,7 @@ nav .menu  a{
   gap: 24px;
   text-align: center;
   color: #fff;
+  margin-top: 40px;
 }
 .main-text h2{
   max-width: 550px;
@@ -192,8 +196,11 @@ nav .menu  a{
   font-size: 16px;
   margin-top:8px ;
   margin-bottom: 40px;
+  color: #fff;
+  opacity: 80%;
 }
 .buttons {
+  margin-top: 5px;
   display: flex;
   gap: 18px;
 }
@@ -201,7 +208,7 @@ nav .menu  a{
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 30px;
   cursor: pointer;
 }
@@ -239,6 +246,65 @@ nav .menu  a{
   background: #412567;
   color: #000;
 }
+.hero-main{
+  width: 1600px;
+  position: relative;
+  top: px;
+  gap: 80px;
+  background-color: #1A0B2E;
+   padding: 50px 200px 120px 200px;
+}
+.text-container{
+  max-width: 1600px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.text-container h3{
+  max-width: 1200px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 16px;
+  
+}
+.text-container p{
+  max-width: 1200px;
+  opacity: 80%;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  
+}
+.dag{
+  border: 1px solid #412567;
+  margin: 80px 80px;
+}
+.box-container{
+  display: flex;
+  max-width: 1200px;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+.box-container .box{
+  max-width: 240px;
+  gap: 16px;
+}
+.box-container h2{
+  font-size: 48px;
+  color: #00FF88;
+}
+.box-container .box p{
+  max-width: 240px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  opacity: 80%;
+}
+
 
 
 
@@ -260,6 +326,7 @@ nav .menu  a{
      overflow: hidden;
   }
   nav{
+    max-width: 576px;
     width: 100%;
     margin-left: 0;
   }
@@ -290,10 +357,9 @@ nav .menu  a{
 }
 .mic-wrapper {
   position: relative;
-  bottom: 220px;
-  top: ;
+  bottom: 315px;
   font-size: 10px;
-    width: 160px;
+    width: 100px;
     
 
   }
@@ -302,12 +368,12 @@ nav .menu  a{
   }
 
   .mic-icon {
-    width: 55px;
+    width: 40px;
     font-size: 10px;
   }
   .badge{
     position: absolute;
-    top: 8px;
+    top: -9px;
     right: -9px;
     font-size: 7px;
   }
@@ -319,4 +385,55 @@ nav .menu  a{
     background-repeat: no-repeat;
     padding: 40px 16px;        
   }
+  .main-text{
+    position: relative;
+    bottom: 330px;
+    max-width: 400px;
+    gap: 8px;
+  }
+  .main-text h2{
+    position: relative;
+    bottom:4px;
+    font-size: 13px;
+    line-height: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
+    gap: 0;
+
+  }
+  .main-text p{
+    position: relative;
+    bottom: 13px;
+    max-width: 120px;
+    width: 100%;
+    font-size: 5px;
+    margin-bottom:30px ;
+    margin-top: 0px;
+    gap: 0;
+  }
+  .buttons{
+    position: relative;
+    bottom: 355px;
+    font-size: 10px;
+    gap:px;
+  }
+  .btn{
+    font-size: 10px;
+     gap: 2px;
+     padding: 4px;
+     border-radius: 15px;
+  }
+  .btn img {
+  width: 8px;
+  height: 9px;
+}
+.btn button {
+  position: relative;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
 }
