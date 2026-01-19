@@ -194,7 +194,8 @@ nav .menu  a{
   line-height: auto;
 
 }
-.main-text p{
+.main-text .hero-p{
+  max-width: 550px;
   font-size: 16px;
   margin-top:8px ;
   margin-bottom: 40px;
@@ -318,7 +319,7 @@ nav .menu  a{
   justify-content: center;
   text-align: center;
 }
-.card-section h2{
+.card-section .card-m{
   max-width: 1200px;
   font-size: 48px;
   font-weight: bold;
@@ -344,7 +345,7 @@ nav .menu  a{
   margin: 107px 280px 16px 5px;
 
 }
-.card-container .card .img1 h3{
+.card-container .card .img1 .card-big{
   max-width: 300px;
   font-size: 24px;
   font-weight: bold;
@@ -386,7 +387,7 @@ p{
   gap: 120px;
   background-color: #1A0B2E;
 }
-h2{
+.fu{
   position: relative;
   top: 60px;
   left: 140px;
@@ -482,7 +483,7 @@ h2{
 }
  .host-name{
   position: relative;
-  top: px;
+  top: 60px;
   right: 380px;
   text-align: left;
   
