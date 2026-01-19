@@ -13,7 +13,7 @@ header{
    background-size: cover;
    background-position: center center;
    overflow-x: hidden;
-    background-color: #412567;
+    background-color: #1A0B2E;
 }
 .logo {
   max-width: 219px;
@@ -47,6 +47,7 @@ nav{
     align-items: center;
     padding: 10px;
     justify-content: center;
+    border-bottom: 1px solid #412567;
 }
 .menu{
     display: flex;
@@ -98,6 +99,149 @@ nav .menu  a{
 }
 
 
+/* hero */
+
+.hero-container{
+  max-width: 1600px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: url("./assets/hero-bg.png") no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+
+}
+.mouth-icon {
+  position: relative;
+  margin-bottom: 20px;
+}
+.mic-wrapper {
+  position: relative;
+  width: 300px;
+  bottom: 30px;
+}
+.mic-bg {
+  width: 100%;
+  display: block;
+}
+.mic-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+}
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #00ff9c;
+  color: #000;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.mic-wrapper {
+  transition: transform 0.3s ease;
+}
+
+.mic-wrapper {
+  transition: transform 0.3s ease;
+}
+
+.mic-wrapper:hover {
+  transform: scale(1.05);
+}
+.badge {
+  animation: pulse 1.6s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 200, 120, 0.6);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(0, 200, 120, 0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.main-text{
+  max-width: 550px;
+  gap: 24px;
+  text-align: center;
+  color: #fff;
+}
+.main-text h2{
+  max-width: 550px;
+  gap: 8px;
+  font-size: 60px;
+  font-weight: extra bold;
+  line-height: auto;
+
+}
+.main-text p{
+  font-size: 16px;
+  margin-top:8px ;
+  margin-bottom: 40px;
+}
+.buttons {
+  display: flex;
+  gap: 18px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.btn img {
+  width: 18px;
+  height: 18px;
+}
+.btn button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* Spotify button */
+.spotify {
+  background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+  color: #fff;
+}
+.spotify:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+
+
+/* Subscribe button */
+.subscribe {
+  border: 1.5px solid #00ffcc;
+  color: #00ffcc;
+}
+
+.subscribe:hover {
+  background: #412567;
+  color: #000;
+}
+
+
+
 
 
 
@@ -144,4 +288,35 @@ nav .menu  a{
   .menu{
     display: none;
 }
+.mic-wrapper {
+  position: relative;
+  bottom: 220px;
+  top: ;
+  font-size: 10px;
+    width: 160px;
+    
+
+  }
+  .mic-bg{
+    width: 100%;
+  }
+
+  .mic-icon {
+    width: 55px;
+    font-size: 10px;
+  }
+  .badge{
+    position: absolute;
+    top: 8px;
+    right: -9px;
+    font-size: 7px;
+  }
+
+  .hero-container{
+    min-height: 100vh;         
+    background-size: contain;  
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 40px 16px;        
+  }
 }
