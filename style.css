@@ -248,6 +248,8 @@ nav .menu  a{
 }
 
 .subscribe:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
   background: #412567;
   color: #000;
 }
@@ -408,6 +410,16 @@ p{
   gap: 40px;
   margin: 120px 200px 120px 200px;
   text-align: left;
+}
+.use-border{
+  position: relative;
+  bottom: 10px;
+  background-color: #250D44;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 24px;
 }
 .future-container .main-img{
   width: 100%;
