@@ -9,12 +9,15 @@
   font-optical-sizing: auto;
 }
 header{
+  width: 100%;
+   background-size: cover;
+   background-position: center center;
+   overflow-x: hidden;
     background-color: #412567;
 }
 .logo {
   max-width: 219px;
-  margin-right: 319px;
-  margin-left: 200px;
+ margin: 0 319px 0 200px;
   font-weight: bold;
   color: white;
   display: flex;
@@ -24,12 +27,17 @@ header{
 }
 .logo h1{
     display: flex;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .gradient-text {
   background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.menu-icon{
+  display: none;
 }
 nav{
     display: flex;
@@ -66,13 +74,12 @@ nav .menu  a{
 .subscribe-btn {
     position: relative;
     right: 200px;
-    display: inline-block;
     width: 135px;
-  background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
-  padding: 1px;
-  border: none;
-  border-radius: 1000px;
-  cursor: pointer;
+    background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+    padding: 1px;
+    border: none;
+    border-radius: 1000px;
+    cursor: pointer;
 }
 .subscribe-btn span {
   display: flex;
@@ -88,4 +95,53 @@ nav .menu  a{
 .subscribe-btn:hover {
   transform: scale(1.05);
   transition: 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px){
+  header{
+    background-size: cover;
+    background-position: center center;
+     max-width: 450px;
+     width: 100%;
+     margin: 0;
+     overflow: hidden;
+  }
+  nav{
+    width: 100%;
+    margin-left: 0;
+  }
+  .menu .item{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    gap: 10px;
+    padding: 200px;
+  }
+  .logo{
+    max-width: 137px;
+    width: 100%;
+    font-size: 13px;
+    margin-right:180px;
+     margin-left:0;
+     align-items: normal;
+  }
+  .menu-icon{
+    display: block;
+    position: absolute;
+    right: 19px;
+    
+  }
+  .menu{
+    display: none;
+}
 }
