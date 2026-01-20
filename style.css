@@ -105,21 +105,28 @@ nav .menu  a{
 
 /* hero */
 
-.hero-container{
-  max-width: 1600px;
+.hero-container {
+  position: relative;
+  width: 100%;
   min-height: 100vh;
+  overflow: hidden;
+  background: url(./assets/hero-bg.png);
+  background-repeat: no-repeat;
+}
+.hero-bg {
+  display: block;
+  width: 100%;
   height: auto;
+  object-fit: contain;
+}
+.hero-content {
+  position: absolute;
+  inset: 0;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
-  position: relative;
-  background: url("./assets/hero-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   align-items: center;
   justify-content: center;
-  
-
 }
 .mouth-icon {
   position: relative;
@@ -128,8 +135,8 @@ nav .menu  a{
 }
 .mic-wrapper {
   position: relative;
+  left: 2%;
   width: 340px;
-  bottom: px;
   top: 1px;
 }
 .mic-bg {
@@ -289,7 +296,7 @@ nav .menu  a{
 }
 .box-container{
   display: grid;
-  display: flex;
+  grid-template-columns: repeat(4, 1fr);
   max-width: 1200px;
   gap: 80px;
   align-items: center;
@@ -612,8 +619,9 @@ p{
 }
 
 
-
-
+#hide{
+  display: none !important;
+}
 
 
 
@@ -621,373 +629,79 @@ p{
 
 
 @media screen and (max-width:576px){
-  header{
-    background-size: cover;
-    background-position: center center;
-     max-width: 450px;
-     width: 100%;
-     margin: 0;
-     overflow: hidden;
-  }
- 
-  nav{
-    display: flex;
-    max-width: 576px;
+  .card-section{
+    max-width: 440px;
+    padding: 40px 0px 0px 0px;
     width: 100%;
-    margin-left: 0;
   }
-  .logo{
-    max-width: 137px;
-    width: 100%;
-    font-size: 13px;
-    margin-right:180px;
-     margin-left:0;
-     align-items: normal;
+  .card-section .card-m{
+    max-width: 400px;
+    font-size: 32px;
+    margin-bottom: 27px;
   }
-  .menu-icon{
+  .card-container{
     display: block;
-    position: absolute;
-    right: 19px;
-    
+    max-width: 400px;
+    margin: 16px 16px;
+
   }
-  .menu{
+  .card-container .card{
+    margin: 16px 16px;
+  }
+  .card-container .img1{
+    margin: 0;
+  }
+  .hero-main{
+    max-width: 440px;
+    padding: 40px 20px 40px 20px;
+  }
+  .text-container{
+    max-width: 400px;
+  }
+  .text-container h3 {
+    max-width: 400px;
+    font-size: 32px;
+  }
+  .text-container p {
+    max-width: 400px;
+  }
+  .text-container .he{
+    margin: 0;
+  }
+  br{
     display: none;
-}
-.hero-container{
-  display: flex;
-  width: 440px;
-  width: 100%;
-}
-.mic-wrapper {
-  position: relative;
-  bottom: px;
-  bottom: 420px;
-  top: -255px;
-  font-size: 10px;
-    width: 100px;
-    
-
   }
-  .mic-bg{
-    width: 100%;
+  .dag{
+    max-width: 400px;
+    margin: 44px 0px;
   }
-
-  .mic-icon {
-    width: 35px;
-    font-size: 10px;
+  .box-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 400px;
+    gap: 40px
   }
-  .badge{
-    position: absolute;
-    top: -1px;
-    right: -9px;
-    font-size: 7px;
-    font-size: 3px;
-  }
-
   .hero-container{
     width: 100%;
     min-height: 100vh;         
-    background-size: contain;  
+    background-size: cover;  
     background-position: top center;
-    background-repeat: no-repeat;
-    padding: 40px 16px;        
+    background-repeat: no-repeat;        
   }
-  .main-text{
-    position: relative;
-    bottom: 272px;
-    max-width: 400px;
-    gap: 8px;
-  }
-  .main-text h2{
-    position: relative;
-    bottom:4px;
-    font-size: 10px;
-    line-height: 40px;
-    margin-bottom: 0;
-    margin-top: 0;
-    gap: 0;
 
-  }
-  .main-text .hero-p{
-    position: relative;
-    bottom: 25px;
-    max-width: 120px;
-    width: 100%;
-    font-size: 3px;
-    margin-bottom:30px ;
-    margin-top: 0px;
-    gap: 0;
-  }
-  .buttons{
-    position: relative;
-    bottom: 330px;
-    font-size: px;
-  }
-  .btn{
-    font-size: px;
-     gap: 2px;
-     padding: 4px;
-     border-radius: 9px;
-  }
-  .btn img {
-  width: 7px;
-  height: 8px;
-}
-.btn button {
-  position: relative;
-  background: none;
-  border: none;
-  color: inherit;
-  font-size: 6px;
-  font-weight: 450px;
-  cursor: pointer;
-  font-size: 4px;
-}
-.hero-main{
-   margin-bottom: 3000px;
-   max-width: 450px;
-}
-.hero-container{
-  width: 100%;
-  max-width: 100%;
-  font-size: 10px;
- 
-}
-.text-container h3{
-  position: relative;
-  right: 50px;
-  width: 400px;
-  text-align: left;
-  font-size: 10px;
-  font-size: -100px;
-  font-weight: bold;
-}
-.text-container p{
-  position: relative;
-  text-align: left;
-  right: 54px;
-  width: 400px;
-  font-size: 5px;
-  line-height: 10px;
-}
-.he{
-  position: relative;
-  bottom: 60px;
-}
-.box-container{
-  max-width: 400px;
-  gap: 40px;
+  .hero-content {
+   padding-top: -10vh;
+    justify-content: flex-start; 
 
 }
-.box-container .box{
-  width: 180px;
-  grid-template-columns: repeat(2,1fr);
-  font-size: 5px;
-}
-.box-container .box h2{
-  max-width: 180px;
-  font-size: 20px;
-}
-.box-container .box p{
-  max-width: 180px;
-  height: 20px;
-  font-size: 10px;
-  line-height: 15px;
-}
-.card-section{
-  width: 100%;
-  margin-bottom: 573px;
-  max-width: 449px;
-  gap: 16px;
-  padding: 20px;
-}
-.card-section .card-m{
-  max-width: 440px;
-  font-weight: bold;
-  font-size: 10px;
-}
-.card-container{
-  width: 400px;
-  grid-template-columns: repeat(1,1fr);
-  font-size: 20px;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-}
-.card-container #big-laout{
-  grid-row: span 0;
-  margin-top: 0;
-}
-.card-container #small-laout{
-  grid-column: span 0;
-}
-.card-container{
-  width: 400px;
-  font-size: 10px;
-  size: -100px;
-  padding: 0px;
-}
-.card-container img{
-  width: 30px;
-}
-.card-container p{
-  font-size: 8px;
-  line-height: 10px;
-}
-.card-container .card{
-  position: relative;
-  top: 0;
-  bottom: 200px;
-  gap: 0;
-  margin: 0;
-  padding: 25px;
-  max-width: 400px;
-  width: 360px;
-
-}
-.card-container .img1{
-  max-width: 60px;
-  margin: 0;
-
-}
-.future-section{
-  max-width: 450px;
-  margin-bottom: 573px;
-  gap: 50px;
-  padding: 20px;
-}
- #tt{
-  display: inline-block;
-  width: 400px;
-  font-size: 10px;
-  text-align: left;
-}
-.future-container{
-  display: inline-block;
-  max-width: 400px;
-
-}
-.future-container .box{
-  position: relative;
-  right: 120px;
-  display: block;
-  padding: 0px;
-  width: 270px;
-}
-.future-container .box h3{
-  position: relative;
-  bottom:30px;
-  width: 368px;
-  font-size: 8px;
-}
-.future-container .box p{
-  position: relative;
-  bottom: 40px;
-  max-width: 200px;
-  font-size: 6px;
-  line-break: 600px;
-
-}
-.into{
-  position: relative;
-  bottom: 40px;
-  max-width: 10px;
-  height: 1px;
-  font-size: 2px;
-}
-.about-section{
-  padding: 0;
-}
-.about-section h2{
-  position: relative;
-  font-size: 20px;
-}
-.about-container{
-  position: relative;
-  display: inline-block;
-   max-width: 400px;
-   height: 483px;
-   padding: 24px;
-   gap: 16px;
-}
-.host{
-  width: 150px;
-  height: 150px;
-}
-.about-container p{
-  position: relative;
-  bottom: 200px;
-  top: -210px;
-  left: 30px;
-  max-width: 352px;
-  font-size: 7px;
+  .mouth-icon {
+    top: -118;
+  }
   
-  line-height: 20px;
-}
-.about-container .socials{
-  position: relative;
-  bottom: 240px;
-  left: 70px;
-  max-width: 180px;
-}
-.icon-box {
-  
-  border-radius: 14px;
-  padding: 5px 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(6px);
-  transition: all 0.3s ease;
-}
-.footer-section{
-  margin-bottom: 573px;
-  max-width: 450px;
-  width: 100%;
-  background-size: 500px;
-  background-repeat: no-repeat;
-}
-.footer-container{
-  position: relative;
-  right: 500px;
-}
-.font-section h1{
-  position: relative;
-  bottom: 70px;
-  text-align: center;
-  margin-left: 65px;
-  max-width: 219px;
-  font-size: 20px;
-}
-.socials-2{
-  position: relative;
-  bottom: 600px;
-  max-width: 200;
-  font-size: px;
-}
- .socials-2 img{
-  width: 12px;
-  height: auto;
-  background-size: -100px;
-  size: 200px;
-  font-size: 1px;
-
-}
-.socials-2 p{
-  position: relative;
-  bottom: 100px;
-  font-size: 10px;
-  gap: 0px;
-}
-.socials-2 img{
-  position: relative;
-  bottom: 80px;
-  gap: 0px;
-  margin: 0;
-  padding: 0;
-
-}
-
-
+ .mic-wrapper {
+  width: 235px;
+ }
+ .badge {
+    top: 20px;
+    right: -7px
+ }
 }
